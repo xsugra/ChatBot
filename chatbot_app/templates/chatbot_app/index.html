@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zora</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+</head>
+<body>
+    <div id="zora-container"></div>
+
+    {{ messages|json_script:"chat-history" }}
+
+    <script>
+        const chat_history_element = document.getElementById('chat-history');
+        const chat_history = chat_history_element ? JSON.parse(chat_history_element.textContent) : [];
+    </script>
+
+    <script src="/static/chatbot_app/zora-widget.js"></script>
+</body>
+</html>
