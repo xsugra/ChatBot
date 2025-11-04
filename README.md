@@ -15,7 +15,7 @@ This guide is for developers who want to run, modify, or deploy the backend serv
 
 **Clone the repository:**
 ```bash
-git clone https://github.com/your-username/ChatBot.git
+git clone https://github.com/xsugra/ChatBot.git
 cd ChatBot
 ```
 
